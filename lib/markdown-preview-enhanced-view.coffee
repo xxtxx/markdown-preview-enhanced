@@ -747,7 +747,7 @@ class MarkdownPreviewEnhancedView extends ScrollView
             dotSrc = el.getAttribute('data-original')
 
             isHasEngine = (dotSrc.indexOf 'engine', 0) >= 0
-            options = {engine: 'dot', scale}
+            options = {engine: 'dot'}
             if isHasEngine
               lineLen = dotSrc.indexOf '\n', 0
               engineLine = (dotSrc.substr 0, lineLen).trim()
